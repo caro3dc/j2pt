@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaRoDC3 J08 L1</title>
+    <script>
+        function moveButton(id) {
+    var butt = document.getElementById(id);
+    butt.style.top = Math.random() * (window.innerHeight * 0.8);
+    butt.style.left = Math.random() * (window.innerWidth * 0.8);
+}
+
+function smallButton(id) {
+    var butt = document.getElementById(id);
+    butt.style.maxWidth = '10px';
+    butt.style.fontSize = '8pt';
+
+}
+
+function bigButton(id) {
+    var butt = document.getElementById(id);
+    butt.style.maxWidth = '250px';
+    butt.style.fontSize = '24pt';
+
+}
+    </script>
+    <style>
+        button {display:block; position: relative; font-size: 24pt; padding: 24pt; max-width: 250px;}
+        </style>
+</head>
+<body>
+    <button onmouseover="moveButton('button')" id="button">You can't catch me</button>
+    <button onmouseout="moveButton('nottub'); bigButton('nottub')" onclick="moveButton('nottub')" onmouseover="smallButton('nottub')" id="nottub">You can catch me, but I run away</button>
+
+</body>
+</html>

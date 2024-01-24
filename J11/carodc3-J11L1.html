@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carodc3 J:11L1</title>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <script>
+        $(document).ready( function() {
+        $("#btnAddDivClass").click(function() {
+            $("#myDiv").addClass("yellowDiv");
+        });
+
+        $("#btnAddPClass").click(function() {
+            $("p").addClass("impPrg");
+        });
+    })
+    </script>
+
+    <style>
+
+        .yellowDiv {
+            background-color: #fc0;
+            margin: 10px 0 0 0;
+            height: 50px;
+        }
+
+        .impPrg {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Demo: jQuery addClass() method</h1>
+    <button id="btnAddDivClass">Add ‹div› class </button>
+    <button id="btnAddPClass">Add ‹p› class</button>
+
+    <div id="myDiv">
+        <p>This is the first paragraph.</p>
+    </div>
+
+    <div>
+        <p>This is the second paragraph.</p>
+    </div>
+
+    <div>
+        <p>This is the third paragraph.</p>
+    </div>
+
+</body>
+
+</html>
+
+<!--
+Carlos Romeo Clemente Del Castillo III
+J:11L1 2023 1218 1651
+-->

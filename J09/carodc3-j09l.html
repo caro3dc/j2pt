@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaRoDC3 Javascript 09LE1</title>
+    <STYLE>
+        * {font-family: "SF Mono", "JetBrains Mono", monospace;}
+        p {text-align: justify; font-size: 12pt;}
+        p#lorem { --f: #1a1981;}
+        p#dum { --f: #d31764; } 
+        p::first-letter {float:left; font-size: 24pt; font-weight: 700; padding: 0pt 2pt; color: var(--f);}
+        p i {color: #888;}
+        button { background: linear-gradient(to bottom right, #1a1981, #d31764); border-radius: 4pt; border: none; width: calc(20% - 8pt); padding: 4pt 4pt; margin: 4pt 8pt;color: white; text-align:center;}
+
+    </STYLE>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Heading</h2>
+    <p id="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias officia exercitationem nam porro beatae corrupti itaque? Reiciendis, maiores ab atque, temporibus rerum vel ullam sint cupiditate, beatae nulla quia distinctio.</p>
+    <p id="dum">Dum degio <i>(né irol in Ian Cornets de Grót ennescolad crasad, enlacséga parhinad la volaget es haddor, ia in nad)</i> o duis ymorat in plumve, e prim mi san diavat ci anre, ia carim gio nion la tolio samned ci iota in dan-san pédet, ia móllam śta id pinod an cé mi san lógtat ci diavad, ilmo toliom nio samned mi gin vose lad mas... Ennero śti id risol Aristotyl.
+    </p>
+    <button>Click me!</button>
+</body>
+</html>
+
+<!--
+    Carlos Romeo Clemente Del Castillo III J:09L1 2023 1204 1538
+-->

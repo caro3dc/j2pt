@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <style>
+
+  </style>
+  <script>
+    function find_longest_word(str) {
+      var arr = str.match(/\w[a-z]{0,}/gi);
+      var result = arr[0];
+
+      for (var x = 1; x < arr.length; x++) {
+        if (result.length < arr[x].length) {
+          result = arr[x];
+        }
+      }
+      return result;
+    }
+
+    var stringVal = prompt("Enter a string");
+    alert(find_longest_word(stringVal));
+  </script>
+</head>
+<body>
+
+</body>
+</html>

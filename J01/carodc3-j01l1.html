@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <style>
+            * {font-family: "JetBrains Mono", monospace; }
+            body {width: 500px; border: 2px dashed #ccc; text-align: center; padding: 0px 8px 0px 8px; }
+        </style>
+        <script>
+            var xd = new Date(); 
+            const ds = ["Dacoravad", "Nélsvad", "Tiusvad", "Ódinsvad", "Dorsvad", "Vréisvad", "Satyrsvad"];
+            const dse = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+            var d = ds[xd.getDay()];
+            var de = dse[xd.getDay()];
+            var da = xd.getDate().toString();
+            var m = "0" + (xd.getMonth() + 1).toString();
+            var y = xd.getFullYear();
+
+            document.write("<h1> Hello world! </h1>");
+            document.write("<p> Sadavi an " + d + ". </p>");
+            document.write("<p> Today is " + de + ". </p>");
+            document.write("<p> Carlos Romeo Del Castillo made this on "+ da + "/" + m + "/" + y +"</p>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

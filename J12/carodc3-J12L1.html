@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carodc3 J:12X1</title>
+<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <script>
+
+$(document).ready(function() {
+        $("span").parent().css({"border":"2px dashed #338"});
+        $("span").parents().css({"font-style":"italic"});
+    });
+    </script>
+
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px dashed grey;
+            color: black;
+            padding: 5px;
+            margin: 5px;
+            font-family: system-ui;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="ancestors">
+        <div style="width:500px;">
+            <ul>
+                HELLO WORLD
+                <li>
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

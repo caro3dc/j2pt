@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaRoDC3 J:07L1</title>
+    <style>* { font-family: "JetBrains Mono", monospace;}</style>
+    <script>
+        var i = 0;
+        function js_style() {
+            ++i;
+            if (i % 2 != 0) {
+            text.style.fontSize = "14pt";
+            text.style.fontFamily = "Comic Sans MS";
+            text.style.color = "green";
+        } else {
+            text.style.fontSize = "12pt";
+            text.style.fontFamily = "JetBrains Mono";
+            text.style.color = "blue";
+        }
+        }
+    </script>
+</head>
+<body>
+    <p id="text">How does this work? Puria śti in iove?</p>
+    <button onclick="js_style()">Style! Nahén de!</button>
+</body>
+</html>

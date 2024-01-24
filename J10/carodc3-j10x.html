@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carodc3 -- J:10L2</title>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <script>
+        
+        $(document).ready(function() {
+            $("#lovejoy").attr("href",$("#link").val());
+            console.log($("#link").val());
+            $("#link").mouseout(function() {
+                $("#lovejoy").attr("href",$("#link").val());
+            })
+            console.log($("#lovejoy").attr("href"));
+        })
+
+        function pencil() {
+
+            alert( $("#cakeFlavour").val() );
+            alert( $("#painstar").html() );
+            alert( $("#lovejoy").attr("href") );
+        }
+    </script>
+
+    <style>
+        * { font-family: "SF Mono", "JetBrains Mono", monospace; }
+        #painstar { 
+            display: block;
+            max-width: 600px;
+            padding: 8pt; margin: 8pt;
+            border-radius: 4pt;
+            border: 1pt dashed #000;
+            text-align: center;
+         }
+         #cakeFlavour, #link {
+            text-align: center;
+         }
+
+         #link {
+            min-width: 300px;
+         }
+
+         #lovejoy { text-align: center; font-size: 32pt;}
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="cakeFlavour">Cake Flavour:</label>
+        <input type="text" id="cakeFlavour" name="cakeFlavour" value="Chocolate">
+    </form>
+    <p><i>You can edit the text below:</i></p>
+    <p contenteditable="true" id="painstar">I take you for granted<br>Because the alternative's far more alarming</p>
+
+    <form>
+        <label for="cakeFlavour">Give the poor link below a href:</label>
+        <input type="text" id="link" name="link" value="https://youtu.be/dQw4w9WgXcQ"><br>
+        <a id="lovejoy" href="">Link</a>
+    </form>
+
+    <button id="submit" onclick="pencil()">Alert!</button>
+</body>
+
+</html>
+
+<!-- Carlos Romeo Clemente Del Castillo III
+J:10L2 2023 1211 1629 -->

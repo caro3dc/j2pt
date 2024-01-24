@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carodc3 J:13X1</title>
+
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <script>
+        $(document).ready( function(){
+            $("#submenu").hide();
+        $("#item").click(function(){
+            $("#submenu").slideToggle(100);
+        });
+    } );
+
+    </script>
+
+    <style>
+        * {
+            font-family: system-ui;
+        }
+
+        #item {
+            padding: 8px;
+            border: 2px solid #112;
+            background: linear-gradient(to bottom, #338, #226);
+            width: fit-content;
+            color: #ddf;
+            text-align: center;
+            border-radius: 16px;
+            font-weight: bold;
+        }
+
+        #submenu  a{
+            display: block;
+            margin: 8px 8px 8px 24px;
+            padding: 8px;
+            width: fit-content;
+            color: 44a;
+            background: linear-gradient(to bottom, #ddf, #99d);
+            border: 2px solid #44a;
+            border-radius: 16px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <div id="item">Dropdown</div>
+            <div id="submenu">
+                <a href="https://fiatlingua.org/wp-content/uploads/2014/08/fl-000024-01.pdf">A Conlanger's Thesaurus</a>
+                <a href="https://en.wikipedia.org/wiki/Grammatical_aspect"><i>Grammatical Aspect</i> on Wikipedia</a>
+                <a href="https://en.wikipedia.org/wiki/Symmetrical_voice"><i>Symmetrical Voice</i> on Wikipedia</a>
+                <a href="https://www.youtube.com/watch?v=sNqJFVOKaU0"><i>My Boy (Twin Fantasy)</i> by Car Seat Headrest</a>
+                <a href="https://en.wikipedia.org/wiki/Aromanticism"><i>Aromanticism</i> on Wikipedia</a>
+                <a href="https://www.biblegateway.com/passage/?search=1%20Corinthians%2013&version=NIV">1 Corinthians 13 (NIV)</a>
+            </div>
+    </div>
+    
+</body>
+</html>

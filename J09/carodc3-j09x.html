@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaRoDC3 J09L2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $("#aya").click(function() { $("#select").text($("#aya").attr("name")); })
+            $("#pb").click(function() { $("#select").text($("#pb").attr("name")); })
+            $("#wuaio").click(function() { $("#select").text($("#wuaio").attr("name")); })
+        })
+
+        </script>
+    <style>
+        * {font-family: "SF Pro Text", "SF Pro", "Inter", "Helvetica", sans-serif;}
+        h1 {
+            background: linear-gradient(to bottom,
+            #16A34A 0%, #16A34A 20%,
+            #84CC16 20%, #84CC16 40%,
+            #F7FEE7 40%, #F7FEE7 60%,
+            #A1A1AA 60%, #A1A1AA 80%,
+            #27272A 80%, #27272A 100%
+            );
+            color: white;
+            text-shadow: -2px -2px 0 #27272A, 2px -2px 0 #27272A, -2px 2px 0 #27272A, 2px 2px 0 #27272A;
+            text-align: center;
+        }
+
+        .imgcont {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            flex-direction: row;
+        }
+
+        .imgcont img {
+            max-width: 200px;
+            margin: 8pt;
+            border: 2px solid #27272A;
+            border-radius: 8pt;
+
+        }
+
+        p {text-align: center; font-size: 12pt;}
+    </style>
+</head>
+
+<body>
+    <h1>Aromantic British Noises</h1>
+    <div class="imgcont">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Lovejoy_Are_You_Alright%3F.jpeg"id="aya"name="Are You Alright?">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Lovejoy_Pebble_Brain.jpeg" id="pb"  name="Pebble Brain">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/94/Lovejoy_-_Wake_Up_%26_It%27s_Over.png" id="wuaio" name="Wake Up And It's Over">
+    </div>
+    <p><b>Selected Album:</b></p>
+    <p id="select"></p>
+</body>
+</html>
+
+<!-- Carlos Romeo Clemente Del Castillo III, MAWD-12 -->
+<!-- J:09L2 2023 1204 1605 -->

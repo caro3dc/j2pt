@@ -1,0 +1,40 @@
+<HTML>
+
+    <HEAD><TITLE>This is a JS LMS Activity</TITLE>
+    
+    <SCRIPT>
+    
+    function test_prime(n) {
+    
+        if (n===1)
+    
+    /* What does this if-else-if statement do? */
+    /* It checks if the parameter is equal to `int` 1. */
+    
+      { return false; }
+     else if(n === 2) { return true; }
+    
+    else {
+        for(var x = 2; x < n; x++)
+    
+        /* What does this for loop do? */
+        /* It iterates the if-statement, checking if there are any numbers with which the parameter divides cleanly; if there is, it returns false. If not, it exits the loop and returns true. */
+        {
+          if(n % x === 0) { return false; }
+        }
+    
+        return true; 
+    
+      }}
+    
+    document.write(test_prime(37));
+    
+    /* What does this function-enabled JS script do? */
+    /* It calls the function with `int` 37 as its parameter. As 37 is indeed a prime number, it will output true. */
+
+    /* Carlos Romeo Clemente Del Castillo III. J:04L1. 2 Oct 2023 M */
+    
+    </SCRIPT></HEAD>
+    
+<body></body>
+    </HTML>

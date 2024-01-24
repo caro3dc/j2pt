@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> <meta charset="utf-8">
+    <head>
+        <style>
+            * { font-family: 'JetBrains Mono', monospace; font-size: 12;}
+        </style>
+    </head>
+
+    <body>
+        <p><b>Current Date:</b> <span id="cd"></span></p>
+        <p><b>Birthday:</b> <span id="bd"></span></p>
+        <p><b>Independence Day:</b> <span id="id"></span></p>
+        <p><b>Christmas:</b> <span id="xd"></span></p>
+
+        <script>
+
+        const c = new Date();
+        const b = new Date("2006-06-13");
+        const i = new Date("1898-06-12");
+        const x = new Date("2023-12-25");
+
+        document.getElementById("cd").innerHTML = c;
+        document.getElementById("bd").innerHTML = b;
+        document.getElementById("id").innerHTML = i;
+        document.getElementById("xd").innerHTML = x;
+
+        </script>
+
+
+    </body>
+</html>

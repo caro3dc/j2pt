@@ -1,0 +1,90 @@
+/* global variables */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    --in0: #334155
+    --in1: #1E293B;
+    --in2: #0F172A;
+    --acc: #64748B;
+    --fg: #F8FAFC;
+    --fg2: #F1F5F9;
+
+    font-family: "JetBrains Mono", monospace;
+}
+
+.shy { --fg: #FFFBEB; --fg2: #FEF3C7; --acc: #F59E0B; }
+.carlos { --fg: #FDF2F8; --fg2: #FFE4E6; --acc: #EC4899; }
+.kurt { --fg: #F0F9FF; --fg2: #E0F2FE; --acc: #38BDF8; }
+
+
+
+html {
+    background-image: linear-gradient(to bottom right,#1E293B, #0F172A);
+}
+
+
+.header {
+    background-image: linear-gradient(to bottom right,#334155, #1E293B);
+    margin-bottom: 8pt;
+    border-radius: 8pt;
+    border: 4pt solid var(--acc);
+}
+
+.cont {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 400px;
+    justify-content: center;
+    gap: 16pt;
+}
+
+@media screen and (max-width: 850px) {
+    .cont { flex-direction: column;}
+}
+
+.cell {
+    background-color: var(--fg);
+    width: 400px;
+    max-width: 500px;
+    min-height: 200px;
+    border-radius: 8pt;
+    padding: 8pt;
+    border: 4pt solid var(--acc);
+}
+
+h1 { text-align: center; font-weight: 800; color: var(--fg); font-size: 32pt;}
+.header h1 { font-size: 48pt; }
+
+.cell h2 { text-align: center; font-weight:700; font-size: 24pt; color: var(--in2); }
+
+.what {
+    width: 100%;
+    border-radius: 8pt;
+    background-image: linear-gradient(to bottom right,#334155, #1E293B); 
+    padding-bottom: 32pt;
+}
+
+.what h1 { padding: 16pt;}
+
+p {text-align: justify; padding: 4pt;}
+.who p {text-align: center;}
+
+
+.buttoncont, .imgcont { width: auto; display:flex; justify-content: center;}
+.cell button { text-align:center; color: var(--fg); background-image: linear-gradient(to bottom right,#1E293B, #0F172A); border: none; border-radius: 4px; padding: 4pt; }
+
+#input {width: auto; text-align: center; margin: 8pt;}
+
+b#youknow {transition: linear;}
+
+img { text-align: center; width: 95%;border-radius: 8pt; border: 4pt var(--in2) solid;}
+
+.tag {font-size: 9pt; text-align: center;}
+
+.footer { margin: 16pt; text-align:center; font-size: 12pt; color: var(--acc);}
+
+.footer a { color: var(--acc); }
+
+.lyric { font-size: 10pt;}

@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaRoDC3 J:07L2</title>
+    <STYLE>
+
+        #myContainer {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        
+        #myAnimation {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        
+        </STYLE>
+
+
+</head>
+<body>
+    
+    <P><BUTTON ONCLICK="myMove()">Click Me</BUTTON></p>
+        <DIV ID ="myContainer">
+            <DIV ID ="myAnimation"></DIV>
+        </DIV>
+
+    <SCRIPT>
+
+         // EXPLAIN WHAT THE myMove() METHOD DOES USING THIS COMMENT SPACE
+        // The myMove() method first selects the red square (the element with the ID myAnimation), sets its position as 0, and, using the setInterval() method, runs the frame() function every 10 milliseconds. The frame() function, in turn, increments the square's position every time it is run, stopping when the position reaches 350.
+
+            
+            function myMove() {
+              var elem = document.getElementById("myAnimation");  
+              var pos = 0;
+              var id = setInterval(frame, 10);
+
+              function frame() {
+                if (pos == 350) {
+                  clearInterval(id);
+                } else {
+                  pos++;
+                  elem.style.top = pos + 'px';
+                  elem.style.left = pos + 'px';
+                }
+              }
+            }
+            
+            </SCRIPT>
+
+</body>
+
+</html>
