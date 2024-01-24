@@ -133,7 +133,7 @@ case 86: $("h1").html("Don't worry"); break;
 case 87: $("h1").html("You and me won't be alone no more"); break;
 case 88: $("h1").html("Don't worry"); break;
 case 89: $("h1").html("You and me won't be alone no more"); break;
-default: $("h1").html("Romeo's Javascript Snippets"); break;
+default: $("h1").html("Romeo's Javascript Snippets");
         }
 
     })
